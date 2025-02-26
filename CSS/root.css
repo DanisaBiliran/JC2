@@ -1,0 +1,22 @@
+:root{
+    --gradient-yellow: linear-gradient(90deg, #FFC614 15.74%, #E7B10A 40.82%, #F8A50A 64.17%, #FFA20D 88.04%); /*for navbar*/
+    --gradient-form: linear-gradient(30deg, #F8E9A1, #FFCF50, #FEFAE0); /*bg of form*/
+    --gradient-yellow: linear-gradient(90deg, #FFC614 15.74%, #E7B10A 40.82%, #F8A50A 64.17%, #FFA20D 88.04%);
+    --dark-green: #4C4B16;
+    --light-green: #898121;
+    --dark-yellow: #E7B10A;
+    --yellow-luscent: rgba(255, 217, 64, 0.537);
+    --yellow-transluscent: rgba(255, 217, 64, 0.537);
+
+    --body: #F7F1E5;
+
+    --aside-shadow: 6px 4px 4px 0px rgba(0, 0, 0, 0.105);
+    --box-shadow: rgba(255, 217, 64, 0.20);
+
+    /* BUTTONS */
+    --login-btn:#333;
+}
+
+body, form, div, input, textarea, select{
+    font-family: 'Poppins', sans-serif; 
+}

@@ -1,0 +1,168 @@
+@import url('root.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gradient-form);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+/* div of login div. to place login message above login div */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+/* div containing forms */
+form {
+    padding: 30px;
+    border: 2px solid rgba(164, 180, 101, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+form {
+    max-width: 30%;
+}
+
+
+
+/* ===================== */
+/* DIV CONTAINING INPUT FIELDS*/
+
+/* login */
+input {
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+
+    text-align: left;
+}
+
+/* all input boxes */
+form input, form input, form textarea {
+    width: 100%;
+    border: 2px solid rgba(164, 180, 101, 0.6);
+    border-radius: 8px;
+    
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+
+    transition: all 0.3s ease-in-out;
+
+    font-size: 16px;
+    padding: 12px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form input:focus {
+    border-color: #A4B465;
+    box-shadow: 0 0 8px rgba(164, 180, 101, 0.6);
+
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* =================== */
+/* BUTTONS */
+
+/* all buttons */
+.login-btn, form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 8px;
+    
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+.login-btn:hover, form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* login button */
+.login-btn{
+    color: #FEFAE0;
+    background: #333;
+}
+
+.login-btn:hover{
+    background: #412701;
+}
+
+/* submit */
+form .submit-btn{
+    background-color: rgb(156, 187, 30);
+}
+
+form .submit-btn:hover{
+    background-color: rgb(118, 146, 7);
+}
+
+
+/* ===================== */
+/*  LOGIN SEAL */
+form .seal {
+    border-radius: 70%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    width: 40%;
+    margin: auto;
+}
+
+.seal img {
+    object-fit: cover;
+    width: 100%;
+}
+
+select {
+    width: 100%;  
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgba(164, 180, 101, 0.6);
+    border-radius: 5px;
+    background-color: #F8E9A1;
+    color: #333;
+    appearance: none; 
+    cursor: pointer;
+  }
+
+
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="%23333" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px; 
+}
+
+
+@media (max-width: 900px) {
+    form{
+        max-width: 90%;
+    }
+}
+  

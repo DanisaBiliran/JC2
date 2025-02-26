@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/forms.css">
     
     <script>
         // ASYNCHRONOUS FUNCTION TO HANDLE USER REGISTRATION
@@ -122,7 +123,7 @@
         <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm_password">
         <br>
 
-        <input type="submit" name="submit" id="submit">
+        <input class="login-btn" type="submit" name="submit" id="submit">
         <br><br>
 
         <p>Already have an account? <a href="login.php">Login here</a></p>

@@ -40,5 +40,16 @@ class User{
         $stmt -> execute();
         return $stmt->rowCount()> 0;  
     }
+
+
+    public function getUserByEmail() {
+        $query = "SELECT id, password, role FROM " . $this->table_name . " WHERE email = :email LIMIT 1";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":email", $this->email);
+        $stmt->execute();
+
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $user ? $user : false; // Return user data or false if not found
+    }
 }
 ?>

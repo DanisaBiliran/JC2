@@ -17,10 +17,11 @@
     $user -> last_name = htmlspecialchars(strip_tags(trim($data['last_name'])));
     $user -> email = filter_var(trim($data['email']), FILTER_SANITIZE_EMAIL);
     $user -> mobile = preg_replace('/\D/', '', trim($data['mobile'])); //REMOVE NON-NUMERIC CHARACTERS
-    $user -> password = trim($data['password']);
     $user -> role = $data['role'];
     $user -> status = $data['status']; //DEFAULT STATUS UPON REGISTRATION
 
+    $user -> password = trim($data['password']);
+    
     //HASH THE PASSWORD
     $user ->  password = password_hash($user->password, PASSWORD_BCRYPT);
 

@@ -101,7 +101,7 @@
     <form action="" id="registerForm" method="" onsubmit="registerUser(event)" style="width: 40%; margin: auto;">
         <input type="text" name="first_name" id="first_name" placeholder="first_name">
         <br>
-
+        
         <input type="text" name="last_name" id="last_name" placeholder="last_name">
         <br>
 

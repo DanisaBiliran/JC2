@@ -39,7 +39,6 @@
             alert(result.message);
 
             if (result.success) {
-                // Role-Based Redirection (PoLP)
                 if (result.role === 'admin') {
                     window.location.href = 'admin_dashboard.php';
                 } else {
